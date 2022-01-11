@@ -1,15 +1,16 @@
 package com.example.qrcode;
 
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.os.Bundle;
 import android.content.Intent;
+import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.zxing.integration.android.IntentIntegrator;
 import com.google.zxing.integration.android.IntentResult;
@@ -22,11 +23,13 @@ import java.util.Date;
 
 // implements onClickListener for the onclick behaviour of button
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+    static final int READ_BLOCK_SIZE = 100;
     Button scanBtn;
-    TextView messageText, messageFormat,concScanBar;
-    static final int READ_BLOCK_SIZE=100;
+    TextView messageText, messageFormat, concScanBar;
     SimpleDateFormat sdf = new SimpleDateFormat("yy-MM-dd");
     String fileDate = sdf.format(new Date()) + ".csv";
+    private Menu globalMenuItem;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,10 +45,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         scanBtn.setOnClickListener(this);
 
         File file = new File(fileDate);
-        if(!file.exists()){
+        if (!file.exists()) {
             try {
-                FileOutputStream fileout=openFileOutput(fileDate, MODE_APPEND);
-                OutputStreamWriter outputWriter=new OutputStreamWriter(fileout);
+                FileOutputStream fileout = openFileOutput(fileDate, MODE_APPEND);
+                OutputStreamWriter outputWriter = new OutputStreamWriter(fileout);
                 outputWriter.write("");
                 outputWriter.close();
                 //Toast.makeText(getBaseContext(), "File saved successfully!",Toast.LENGTH_SHORT).show();
@@ -56,20 +59,44 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        super.onCreateOptionsMenu(menu);
+        getMenuInflater().inflate(R.menu.menu, menu);
+        globalMenuItem = menu;
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        globalMenuItem.findItem(R.id.scan).setVisible(false);
+        // Handle item selection
+        switch (item.getItemId()) {
+            case R.id.part_inventory:
+                Intent stillage = new Intent(this, Stillage.class);
+                startActivity(stillage);
+                break;
+            case R.id.email:
+                Intent email = new Intent(this, Email.class);
+                startActivity(email);
+                break;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+        return true;
+    }
+
+
+    @Override
     public void onClick(View v) {
-
-
         try {
-            FileOutputStream fileout=openFileOutput(fileDate, MODE_APPEND);
-            OutputStreamWriter outputWriter=new OutputStreamWriter(fileout);
-            outputWriter.write(messageText.getText().toString()+"\n");
+            FileOutputStream fileout = openFileOutput(fileDate, MODE_APPEND);
+            OutputStreamWriter outputWriter = new OutputStreamWriter(fileout);
+            outputWriter.write(messageText.getText().toString() + "\n");
             outputWriter.close();
             //Toast.makeText(getBaseContext(), "File saved successfully!",Toast.LENGTH_SHORT).show();
         } catch (Exception e) {
             e.printStackTrace();
         }
-
-
         // we need to create the object
         // of IntentIntegrator class
         // which is the class of QR library
@@ -77,7 +104,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         intentIntegrator.setPrompt("Scan a barcode or QR Code");
         intentIntegrator.setOrientationLocked(true);
         intentIntegrator.initiateScan();
-        scanBtn.setText("Add and scan next one");
     }
 
     @Override
@@ -100,5 +126,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             super.onActivityResult(requestCode, resultCode, data);
         }
     }
+
 
 }

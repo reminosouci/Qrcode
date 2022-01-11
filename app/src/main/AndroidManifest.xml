@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Qrcode">
         <activity
+            android:name=".Email"
+            android:exported="false" />
+        <activity
+            android:name=".Stillage"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
