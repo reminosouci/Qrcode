@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+        <TextView
+            android:id="@+id/stillageA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="White Stillage"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+
+        <TextView
+            android:id="@+id/textViewA1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="24dp"
+            android:text="TextView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/stillageA" />
+        <SeekBar
+            android:id="@+id/seekBarA1"
+            android:layout_width="159dp"
+            android:layout_height="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textViewA1" />
+        <TextView
+            android:id="@+id/textViewA2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="@+id/textViewA1"
+            app:layout_constraintTop_toBottomOf="@+id/textViewA1" />
+        <SeekBar
+            android:id="@+id/seekBarA2"
+            android:layout_width="159dp"
+            android:layout_height="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textViewA2" />
+
+        <TextView
+            android:id="@+id/textViewA3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="@+id/textViewA2"
+            app:layout_constraintTop_toBottomOf="@+id/textViewA2" />
+        <SeekBar
+            android:id="@+id/seekBarA3"
+            android:layout_width="159dp"
+            android:layout_height="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textViewA3" />
+        <TextView
+            android:id="@+id/textViewA4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="@+id/textViewA3"
+            app:layout_constraintTop_toBottomOf="@+id/textViewA3" />
+        <SeekBar
+            android:id="@+id/seekBarA4"
+            android:layout_width="159dp"
+            android:layout_height="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textViewA4" />
+        <TextView
+            android:id="@+id/textViewA5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="@+id/textViewA4"
+            app:layout_constraintTop_toBottomOf="@+id/textViewA4" />
+        <SeekBar
+            android:id="@+id/seekBarA5"
+            android:layout_width="159dp"
+            android:layout_height="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textViewA5" />
+        <TextView
+            android:id="@+id/textViewA6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="@+id/textViewA5"
+            app:layout_constraintTop_toBottomOf="@+id/textViewA5" />
+        <SeekBar
+            android:id="@+id/seekBarA6"
+            android:layout_width="159dp"
+            android:layout_height="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textViewA6" />
+        <TextView
+            android:id="@+id/textViewA7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="@+id/textViewA6"
+            app:layout_constraintTop_toBottomOf="@+id/textViewA6" />
+        <SeekBar
+            android:id="@+id/seekBarA7"
+            android:layout_width="159dp"
+            android:layout_height="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textViewA7" />
+        <TextView
+            android:id="@+id/textViewA8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="@+id/textViewA7"
+            app:layout_constraintTop_toBottomOf="@+id/textViewA7" />
+        <SeekBar
+            android:id="@+id/seekBarA8"
+            android:layout_width="159dp"
+            android:layout_height="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textViewA8" />
+        <TextView
+            android:id="@+id/textViewA9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="@+id/textViewA6"
+            app:layout_constraintTop_toBottomOf="@+id/textViewA8" />
+        <SeekBar
+            android:id="@+id/seekBarA9"
+            android:layout_width="159dp"
+            android:layout_height="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textViewA9" />
+        <TextView
+            android:id="@+id/textViewA10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="@+id/textViewA6"
+            app:layout_constraintTop_toBottomOf="@+id/textViewA9" />
+        <SeekBar
+            android:id="@+id/seekBarA10"
+            android:layout_width="159dp"
+            android:layout_height="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textViewA10" />
+        <TextView
+            android:id="@+id/textViewA11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="@+id/textViewA6"
+            app:layout_constraintTop_toBottomOf="@+id/textViewA10" />
+        <SeekBar
+            android:id="@+id/seekBarA11"
+            android:layout_width="159dp"
+            android:layout_height="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textViewA11" />
+        <TextView
+            android:id="@+id/textViewA12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="@+id/textViewA6"
+            app:layout_constraintTop_toBottomOf="@+id/textViewA11" />
+        <SeekBar
+            android:id="@+id/seekBarA12"
+            android:layout_width="159dp"
+            android:layout_height="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textViewA12" />
+        <TextView
+            android:id="@+id/textViewA13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="@+id/textViewA6"
+            app:layout_constraintTop_toBottomOf="@+id/textViewA12" />
+        <SeekBar
+            android:id="@+id/seekBarA13"
+            android:layout_width="159dp"
+            android:layout_height="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textViewA13" />
+        <TextView
+            android:id="@+id/textViewA14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="@+id/textViewA6"
+            app:layout_constraintTop_toBottomOf="@+id/textViewA13" />
+        <SeekBar
+            android:id="@+id/seekBarA14"
+            android:layout_width="159dp"
+            android:layout_height="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textViewA14" />
+
+
+        <TextView
+            android:id="@+id/stillageB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Yellow Stillage"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.44"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/seekBarA14" />
+
+        <TextView
+            android:id="@+id/textViewB1"
+            android:layout_height="18dp"
+            android:layout_marginTop="40dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="@+id/textViewA14"
+            app:layout_constraintTop_toBottomOf="@+id/stillageB"
+            android:layout_width="wrap_content" />
+
+        <SeekBar
+            android:id="@+id/seekBarB1"
+            android:layout_width="159dp"
+            android:layout_height="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textViewB1" />
+        <TextView
+            android:id="@+id/textViewB2"
+            android:layout_height="18dp"
+            android:layout_marginTop="40dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="@+id/textViewB1"
+            app:layout_constraintTop_toBottomOf="@+id/textViewB1"
+            android:layout_width="wrap_content" />
+
+        <SeekBar
+            android:id="@+id/seekBarB2"
+            android:layout_width="159dp"
+            android:layout_height="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textViewB2" />
+        <TextView
+            android:id="@+id/textViewB3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="@+id/textViewB1"
+            app:layout_constraintTop_toBottomOf="@+id/textViewB2" />
+        <SeekBar
+            android:id="@+id/seekBarB3"
+            android:layout_width="159dp"
+            android:layout_height="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textViewB3" />
+        <TextView
+            android:id="@+id/textViewB4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="@+id/textViewB1"
+            app:layout_constraintTop_toBottomOf="@+id/textViewB3" />
+        <SeekBar
+            android:id="@+id/seekBarB4"
+            android:layout_width="159dp"
+            android:layout_height="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textViewB4" />
+        <TextView
+            android:id="@+id/textViewB5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="@+id/textViewB1"
+            app:layout_constraintTop_toBottomOf="@+id/textViewB4" />
+        <SeekBar
+            android:id="@+id/seekBarB5"
+            android:layout_width="159dp"
+            android:layout_height="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textViewB5" />
+        <TextView
+            android:id="@+id/textViewB6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="@+id/textViewB1"
+            app:layout_constraintTop_toBottomOf="@+id/textViewB5" />
+        <SeekBar
+            android:id="@+id/seekBarB6"
+            android:layout_width="159dp"
+            android:layout_height="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textViewB6" />
+        <TextView
+            android:id="@+id/textViewB7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="@+id/textViewB1"
+            app:layout_constraintTop_toBottomOf="@+id/textViewB6" />
+        <SeekBar
+            android:id="@+id/seekBarB7"
+            android:layout_width="159dp"
+            android:layout_height="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textViewB7" />
+        <TextView
+            android:id="@+id/textViewB8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="@+id/textViewB1"
+            app:layout_constraintTop_toBottomOf="@+id/textViewB7" />
+        <SeekBar
+            android:id="@+id/seekBarB8"
+            android:layout_width="159dp"
+            android:layout_height="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textViewB8" />
+        <TextView
+            android:id="@+id/textViewB9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="@+id/textViewB1"
+            app:layout_constraintTop_toBottomOf="@+id/textViewB8" />
+        <SeekBar
+            android:id="@+id/seekBarB9"
+            android:layout_width="159dp"
+            android:layout_height="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textViewB9" />
+        <TextView
+            android:id="@+id/textViewB10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="@+id/textViewB1"
+            app:layout_constraintTop_toBottomOf="@+id/textViewB9" />
+        <SeekBar
+            android:id="@+id/seekBarB10"
+            android:layout_width="159dp"
+            android:layout_height="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textViewB10" />
+        <TextView
+            android:id="@+id/textViewB11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="@+id/textViewB1"
+            app:layout_constraintTop_toBottomOf="@+id/textViewB10" />
+        <SeekBar
+            android:id="@+id/seekBarB11"
+            android:layout_width="159dp"
+            android:layout_height="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textViewB11" />
+        <TextView
+            android:id="@+id/textViewB12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="@+id/textViewB1"
+            app:layout_constraintTop_toBottomOf="@+id/textViewB11" />
+        <SeekBar
+            android:id="@+id/seekBarB12"
+            android:layout_width="159dp"
+            android:layout_height="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textViewB12" />
+        <TextView
+            android:id="@+id/textViewB13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="@+id/textViewB1"
+            app:layout_constraintTop_toBottomOf="@+id/textViewB12" />
+        <SeekBar
+            android:id="@+id/seekBarB13"
+            android:layout_width="159dp"
+            android:layout_height="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textViewB13" />
+        <TextView
+            android:id="@+id/textViewB14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="@+id/textViewB1"
+            app:layout_constraintTop_toBottomOf="@+id/textViewB13" />
+        <SeekBar
+            android:id="@+id/seekBarB14"
+            android:layout_width="159dp"
+            android:layout_height="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textViewB14" />
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+
+
+
+
+
