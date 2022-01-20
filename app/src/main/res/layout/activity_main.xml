@@ -80,14 +80,14 @@
             android:textAlignment="center" />
 
         <CheckBox
-            android:id="@+id/checkBox"
+            android:id="@+id/cbquarantine"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Quarantine" />
 
         <CheckBox
-            android:id="@+id/checkBox2"
+            android:id="@+id/cbopened"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -118,14 +118,14 @@
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
-                android:text="1st part" />
+                android:text="top" />
 
             <RadioButton
                 android:id="@+id/rb2"
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
-                android:text="2nd part" />
+                android:text="bottom" />
         </RadioGroup>
     </LinearLayout>
 
