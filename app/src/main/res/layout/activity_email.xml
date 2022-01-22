@@ -7,11 +7,23 @@
     tools:context=".Email">
 
     <Button
-        android:id="@+id/sendEmail"
+        android:id="@+id/createfile"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="sdfsdf"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="createfile"/>
+
+    <TextView
+        android:id="@+id/editText_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createfile" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
