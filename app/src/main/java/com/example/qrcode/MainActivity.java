@@ -9,10 +9,10 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Spinner;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.Nullable;
@@ -30,7 +30,7 @@ import java.util.Date;
 // implements onClickListener for the onclick behaviour of button
 public class MainActivity extends AppCompatActivity implements View.OnClickListener, AdapterView.OnItemSelectedListener, RadioGroup.OnCheckedChangeListener {
     Button scanBtn, addBtn;
-    TextView PO, WO, concScanBar, note;
+    EditText PO, WO, concScanBar, note;
     SimpleDateFormat sdf = new SimpleDateFormat("yy-MM-dd");
     String fileDate = sdf.format(new Date()) + ".csv";
     String[] kit_type = { "kit n/a", "kit 1", "kit 2", "kit 3", "kit 4", "kit 5", "kit 6", "kit 7", "kit 8", "kit 9", "kit 10", "kit 11", "kit 12", "kit 13", "kit 14", "kit 15" };
@@ -113,20 +113,24 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     boolean quarantineischecked = ((CheckBox) findViewById(R.id.cbquarantine)).isChecked();
                     if (quarantineischecked) {
                         Q = 'Q';
+                        Toast.makeText(getBaseContext(), "Q applied",Toast.LENGTH_SHORT).show();
                     } else {
                         Q = '-';
+                        Toast.makeText(getBaseContext(), "Q not applied",Toast.LENGTH_SHORT).show();
                     }
                     char O;
-                    boolean openedischecked = ((CheckBox) findViewById(R.id.cbquarantine)).isChecked();
+                    boolean openedischecked = ((CheckBox) findViewById(R.id.cbopened)).isChecked();
                     if (openedischecked) {
                         O = 'O';
+                        Toast.makeText(getBaseContext(), "O applied",Toast.LENGTH_SHORT).show();
                     } else {
                         O = '-';
+                        Toast.makeText(getBaseContext(), "O not applied",Toast.LENGTH_SHORT).show();
                     }
 
 
                     String text;
-                    text = kit_type_st + "," + note.getText().toString() + "," + WO.getText().toString() + "," + PO.getText().toString() + "," + topbottom + "," + O + "," + Q + "\n";
+                    text = kit_type_st + "," + note.getText().toString() + "," + WO.getText().toString() + "," + PO.getText().toString() + "," + topbottom + "," + Q + "," + O + "\n";
 
 
 
