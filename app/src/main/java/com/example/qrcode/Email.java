@@ -7,33 +7,53 @@ import android.os.Environment;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Scanner;
 
 public class Email extends AppCompatActivity {
     private Menu globalMenuItem;
+    TextView text;
 
-    // After API 23 the permission request for accessing external storage is changed
-    // Before API 23 permission request is asked by the user during installation of app
-    // After API 23 permission request is asked at runtime
+
+    String pokemon_str;
+
+
     private int EXTERNAL_STORAGE_PERMISSION_CODE = 23;
-
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_email);
 
+        text = findViewById(R.id.editText_data);
 
 
+        Scanner scanner = null;
+        try {
+            scanner = new Scanner(new File("/data/data/com.example.qrcode/files/22-01-22.csv"));
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+        ArrayList<String> pokemon = new ArrayList<>();
+        while(scanner.hasNextLine()) {
+            pokemon.add(scanner.nextLine().split(",")[1]);
+        }
+        scanner.close();
 
+        for (int counter = 0; counter < pokemon.size(); counter++) {
+            pokemon_str = pokemon_str + pokemon.get(counter) + "\n";
+        }
+
+        text.setText(pokemon_str);
 
 
 
